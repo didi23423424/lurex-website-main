@@ -358,12 +358,43 @@ body::after {
     filter: drop-shadow(0 0 6px rgba(165, 160, 160, 0.6));
 }
 
+.login-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.8vmin;
+    padding: 0.8vmin 1.6vmin;
+    border-radius: 1vmin;
+    background: rgba(255,255,255,0.03);
+    backdrop-filter: blur(8px);
+    left: 39vmin;
+    transition: all 0.3s ease;
+}
+
+.user-icon {
+    width: 2vmin;
+    height: 2vmin;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.login-btn:hover {
+    background: rgba(255,255,255,0.08);
+    transform: translateY(-2px);
+    box-shadow: 
+        0 0 15px rgba(165, 160, 160, 0.2),
+        0 0 30px rgba(165, 160, 160, 0.08);
+}
+
+.login-btn:hover .cart-icon {
+    transform: scale(1.1) rotate(-5deg);
+    filter: drop-shadow(0 0 6px rgba(165, 160, 160, 0.6));
+}
+
 
 
 /*------------------------------------------*/
 .display-container {
     width: 202.8vmin;
-    height: 94.8vmin;
+    height: 83vmin;
     margin-top: 15vmin;
     position: absolute;
 }
@@ -576,4 +607,302 @@ body::after {
 .star-btn:hover .star-icon {
     transform: scale(1.15) rotate(8deg);
     filter: drop-shadow(0 0 6px rgba(230, 226, 9, 0.6));
+}
+
+.pic-right-box-uber {
+    width: 30vmin;
+    height: 20vmin;
+    margin-left: 150vmin;
+    position: absolute;
+}
+
+.pic-left-box-uber-img {
+    width: 60vmin;
+    margin-top: 25vmin;
+    margin-left: -30vmin;
+    position: absolute;
+}
+
+/*-------------------------------------*/
+
+.keineahnung {
+    width: 96vmin;
+    height: 15vmin;
+    margin-left: 54vmin;
+    margin-top: 40vmin;
+    position: absolute;
+}
+
+.ka1 {
+    width: 31.5vmin;
+    height: 15vmin;
+    position: absolute;
+}
+
+.ka1-symb-quad {
+    width: 4.5vmin;
+    height: 4.5vmin;
+    box-shadow: 0 0 10px white;
+    border-radius: 10px;
+    margin-left: 1vmin;
+    margin-top: 1vmin;
+    position: absolute;
+}
+
+.ka1-uber {
+    font-family: rj-s;
+    font-size: 2vmin;
+    color: white;
+    margin-left: 7vmin;
+    margin-top: 2.5vmin;
+    position: absolute;
+}
+
+.ka1-desc-cont {
+    width: 29vmin;
+    height: 7vmin;
+    margin-left: 1vmin;
+    margin-top: 7vmin;
+    position: absolute;
+}
+
+.fa-truck {
+    font-size: 2.5vmin;
+    color: white;
+    position: absolute;
+    margin-left: 0.8vmin;
+    margin-top: 1vmin;
+}
+
+.ka1-desc {
+    font-family: rj-s;
+    color: white;
+    margin-top: -2vmin;
+    position: absolute;
+}
+
+.ka2 {
+    width: 31.5vmin;
+    height: 15vmin;
+    margin-left: 32vmin;
+    position: absolute;
+}
+
+.ka2-symb-quad {
+    width: 4.5vmin;
+    height: 4.5vmin;
+    box-shadow: 0 0 10px white;
+    border-radius: 10px;
+    margin-left: 1vmin;
+    margin-top: 1vmin;
+    position: absolute;
+}
+
+.ka2-uber {
+    font-family: rj-s;
+    font-size: 2vmin;
+    color: white;
+    margin-left: 7vmin;
+    margin-top: 2.5vmin;
+    position: absolute;
+}
+
+.ka2-desc-cont {
+    width: 29vmin;
+    height: 7vmin;
+    margin-left: 1vmin;
+    margin-top: 7vmin;
+    position: absolute;
+}
+
+.fa-handshake-angle {
+    font-size: 2.5vmin;
+    color: white;
+    position: absolute;
+    margin-left: 0.7vmin;
+    margin-top: 1vmin;
+}
+
+.ka2-desc {
+    font-family: rj-s;
+    color: white;
+    margin-top: -2vmin;
+    position: absolute;
+}
+
+.ka3 {
+    width: 31.5vmin;
+    height: 15vmin;
+    margin-left: 64.1vmin;
+    position: absolute;
+}
+
+.ka3-symb-quad {
+    width: 4.5vmin;
+    height: 4.5vmin;
+    box-shadow: 0 0 10px white;
+    border-radius: 10px;
+    margin-left: 1vmin;
+    margin-top: 1vmin;
+    position: absolute;
+}
+
+.ka3-uber {
+    font-family: rj-s;
+    font-size: 2vmin;
+    color: white;
+    margin-left: 7vmin;
+    margin-top: 2.5vmin;
+    position: absolute;
+}
+
+.ka3-desc-cont {
+    width: 29vmin;
+    height: 7vmin;
+    margin-left: 1vmin;
+    margin-top: 7vmin;
+    position: absolute;
+}
+
+.fa-calendar-check {
+    font-size: 2.5vmin;
+    color: white;
+    position: absolute;
+    margin-left: 1.2vmin;
+    margin-top: 1vmin;
+}
+
+.ka3-desc {
+    font-family: rj-s;
+    color: white;
+    margin-top: -2vmin;
+    position: absolute;
+}
+
+
+
+
+/* ========================= */
+/* 📱 MOBILE RESPONSIVE FIX  */
+/* ========================= */
+
+@media (max-width: 768px) {
+
+    body {
+        height: auto;
+        overflow-x: hidden;
+    }
+
+    /* NAVBAR */
+    .bar {
+        width: 95%;
+        height: auto;
+        margin: 2vmin auto;
+        left: 0;
+        right: 0;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2vmin;
+    }
+
+    .logo-quad {
+        position: relative;
+        margin: 0;
+    }
+
+    .logo {
+        width: 12vmin;
+        position: relative;
+        margin: 0;
+    }
+
+    .name1 {
+        position: relative;
+        margin: 1vmin 0;
+        font-size: 5vmin;
+    }
+
+    .links {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2vmin;
+        margin-top: 2vmin;
+    }
+
+    .links a {
+        position: relative !important;
+        margin: 0 !important;
+        font-size: 3vmin;
+    }
+
+    /* HERO TEXT */
+    .text1, .text2, .text3 {
+        position: relative;
+        margin: 2vmin auto;
+        text-align: center;
+        left: 0;
+        transform: none;
+    }
+
+    .text1 {
+        font-size: 6vmin;
+    }
+
+    .text2 {
+        font-size: 5vmin;
+    }
+
+    .text3 {
+        font-size: 4.5vmin;
+    }
+
+    /* BUTTONS */
+    .buttons-uber {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3vmin;
+        margin-top: 5vmin;
+    }
+
+    .discord-btn-link,
+    .check-products-btn,
+    .star-btn {
+        position: relative !important;
+        left: 0 !important;
+        top: 0 !important;
+        width: 80%;
+        justify-content: center;
+    }
+
+    /* IMAGES */
+    .pic-right-box-uber,
+    .pic-left-box-uber-img {
+        display: none;
+    }
+
+    /* FEATURE BOXES */
+    .keineahnung {
+        position: relative;
+        width: 90%;
+        margin: 10vmin auto;
+        display: flex;
+        flex-direction: column;
+        gap: 4vmin;
+    }
+
+    .ka1, .ka2, .ka3 {
+        position: relative;
+        width: 100%;
+        margin: 0;
+    }
+
+    .ka1-desc, .ka2-desc, .ka3-desc {
+        font-size: 3vmin;
+    }
 }
