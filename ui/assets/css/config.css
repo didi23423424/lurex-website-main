@@ -1,0 +1,53 @@
+:root {
+
+    /* Farben */
+    --pri-color: #413f42;
+    --sec-color: #a5a0a0;
+    --thi-color: grey;
+    --fou-color: rgb(83, 81, 81);
+
+    /* Fonts */
+    --font-akrobat: 'Akrobat';
+    --font-bebas: 'bebas';
+    --font-mrdafoe: 'Mr Dafoe';
+    --font-abdel: 'Abdel';
+    --font-akira: 'Akira';
+    --font-gilroy: 'Gilroy';
+    --font-rbno: 'RBNo';
+}
+
+@font-face {
+  font-family: 'RJ';
+  src: url('../font/Rajdhani-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Mr Dafoe';
+  src: url('../font/MrDafoe-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'RJ-S';
+  src: url('../font/Rajdhani-SemiBold.ttf') format('truetype');
+}
+
+
+@font-face {
+    font-family: 'shabo';
+    src: url('../font/SCHABO-Condensed.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Mont';
+    src: url('../font/Montserrat-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: akrobat;
+    src: url('../font/Akrobat-Bold.otf') format('opentype');
+}
+
+@font-face {
+    font-family: bebas;
+    src: url('../font/BebasNeue-Regular.ttf') format('truetype');
+}

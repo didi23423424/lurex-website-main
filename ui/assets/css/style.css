@@ -1,0 +1,579 @@
+:root {
+    --pri-color: #121113;
+    --sec-color: #3a3838;
+    --thi-color: #1c1b1d;
+    --fou-color: #161518;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+
+    background: linear-gradient(
+        135deg,
+        #0e0d0f,
+        var(--pri-color),
+        var(--fou-color),
+        var(--thi-color),
+        #2a2828
+    );
+
+    background-size: 220% 220%;
+    animation: gradientMove 26s ease-in-out infinite;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: var(--y, 50%);
+    left: var(--x, 50%);
+    transform: translate(-50%, -50%);
+
+    width: 450px;
+    height: 450px;
+
+    background: radial-gradient(
+        circle,
+        rgba(200, 200, 200, 0.04),
+        rgba(200, 200, 200, 0.01),
+        transparent 70%
+    );
+
+    pointer-events: none;
+}
+
+body::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+
+    background: radial-gradient(
+        circle at center,
+        transparent 35%,
+        rgba(0, 0, 0, 0.75)
+    );
+
+    pointer-events: none;
+}
+
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 45%;
+    }
+    50% {
+        background-position: 100% 55%;
+    }
+    100% {
+        background-position: 0% 45%;
+    }
+}
+
+.bar {
+    width: 120vmin;
+    height: 13vmin;
+    margin-left: 40vmin;
+    position: absolute;
+
+    background: rgba(255, 255, 255, 0.02);
+    backdrop-filter: blur(10px);
+    border-radius: 1.5vmin;
+
+    transition: all 0.3s ease;
+}
+
+.bar:hover {
+    background: rgba(255, 255, 255, 0.06);
+    transform: translateY(-2px);
+}
+
+.logo-quad {
+    width: 6vmin;
+    height: 6vmin;
+    margin-left: 2vmin;
+    margin-top: 3vmin;
+    position: absolute;
+}
+
+.logo {
+    width: 10vmin;
+    margin-left: -2vmin;
+    margin-top: -1.5vmin;
+    position: absolute;
+}
+
+.name1 {
+    font-family: rj;
+    font-size: 4vmin;
+    color: white;
+    margin-left: 9.5vmin;
+    margin-top: 4.5vmin;
+    position: absolute;
+}
+
+/* Die verschiedenen Links */
+
+.home-link {
+    font-family: rj;
+    color: white;
+    font-size: 1.8vmin;
+    margin-left: 34vmin;
+    margin-top: 4vmin;
+    text-decoration: none;
+    position: absolute;
+    transition: color 0.3s ease;
+}
+
+.home-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        #a5a0a0,
+        transparent
+    );
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.3s ease;
+}
+
+.home-link:hover {
+    color: #a5a0a0;
+}
+
+.home-link:hover::after {
+    transform: scaleX(1);
+}
+
+.product-link {
+    font-family: rj;
+    color: white;
+    font-size: 1.8vmin;
+    margin-left: 42vmin;
+    margin-top: 4vmin;
+    text-decoration: none;
+    position: absolute;
+    transition: color 0.3s ease;
+}
+
+.product-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        #a5a0a0,
+        transparent
+    );
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.3s ease;
+}
+
+.product-link:hover {
+    color: #a5a0a0;
+}
+
+.product-link:hover::after {
+    transform: scaleX(1);
+}
+
+.review-link {
+    font-family: rj;
+    color: white;
+    font-size: 1.8vmin;
+    margin-left: 52vmin;
+    margin-top: 4vmin;
+    text-decoration: none;
+    position: absolute;
+    transition: color 0.3s ease;
+}
+
+.review-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        #a5a0a0,
+        transparent
+    );
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.3s ease;
+}
+
+.review-link:hover {
+    color: #a5a0a0;
+}
+
+.review-link:hover::after {
+    transform: scaleX(1);
+}
+
+.aboutus-link {
+    font-family: rj;
+    color: white;
+    font-size: 1.8vmin;
+    margin-left: 61vmin;
+    margin-top: 4vmin;
+    text-decoration: none;
+    position: absolute;
+    transition: color 0.3s ease;
+}
+
+.aboutus-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        #a5a0a0,
+        transparent
+    );
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.3s ease;
+}
+
+.aboutus-link:hover {
+    color: #a5a0a0;
+}
+
+.aboutus-link:hover::after {
+    transform: scaleX(1);
+}
+
+.discount-link {
+    font-family: rj;
+    color: white;
+    font-size: 1.8vmin;
+    margin-left: 71vmin;
+    margin-top: 4vmin;
+    text-decoration: none;
+    position: absolute;
+    transition: color 0.3s ease;
+}
+
+.discount-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        #a5a0a0,
+        transparent
+    );
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.3s ease;
+}
+
+.discount-link:hover {
+    color: #a5a0a0;
+}
+
+.discount-link:hover::after {
+    transform: scaleX(1);
+}
+
+.discord-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.8vmin;
+    padding: 0.8vmin 1.6vmin;
+    border-radius: 1vmin;
+    left: 18vmin;
+    top: -1vmin;
+    transition: all 0.3s ease;
+}
+
+.discord-icon {
+    width: 2vmin;
+    height: 2vmin;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.discord-btn:hover {
+    background: rgba(255,255,255,0.08);
+    transform: translateY(-2px);
+    box-shadow: 
+        0 0 15px rgba(114, 137, 218, 0.2),
+        0 0 30px rgba(114, 137, 218, 0.08);
+}
+
+.discord-btn:hover .discord-icon {
+    transform: scale(1.1) rotate(-5deg);
+    filter: drop-shadow(0 0 6px rgba(114, 137, 218, 0.6));
+}
+
+.cart-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.8vmin;
+    padding: 0.8vmin 1.6vmin;
+    border-radius: 1vmin;
+    background: rgba(255,255,255,0.03);
+    backdrop-filter: blur(8px);
+    left: 28vmin;
+    transition: all 0.3s ease;
+}
+
+.cart-icon {
+    width: 2vmin;
+    height: 2vmin;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.cart-btn:hover {
+    background: rgba(255,255,255,0.08);
+    transform: translateY(-2px);
+    box-shadow: 
+        0 0 15px rgba(165, 160, 160, 0.2),
+        0 0 30px rgba(165, 160, 160, 0.08);
+}
+
+.cart-btn:hover .cart-icon {
+    transform: scale(1.1) rotate(-5deg);
+    filter: drop-shadow(0 0 6px rgba(165, 160, 160, 0.6));
+}
+
+
+
+/*------------------------------------------*/
+.display-container {
+    width: 202.8vmin;
+    height: 94.8vmin;
+    margin-top: 15vmin;
+    position: absolute;
+}
+
+.text1 {
+    font-family: rj;
+    font-size: 5vmin;
+    color: white;
+    margin-top: 2vmin;
+    margin-left: 80vmin;
+    position: absolute;
+}
+
+/*------------------------------------------*/
+
+.lurex1 {
+    background: linear-gradient(45deg, var(--sec-color), #ffffff, var(--pri-color), var(--sec-color));
+    background-size: 300% 300%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientFlow 2.5s ease-in-out infinite;
+    font-weight: bold;
+    text-shadow: 0 0 20px rgba(165, 160, 160, 0.5);
+    position: relative;
+}
+
+.lurex1::before {
+    content: 'LUREX';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(45deg, var(--sec-color), #ffffff, var(--pri-color), var(--sec-color));
+    background-size: 300% 300%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientFlow 2.5s ease-in-out infinite reverse;
+    z-index: -1;
+    filter: blur(8px);
+    opacity: 0.7;
+}
+
+@keyframes gradientFlow {
+    0% {
+        background-position: 0% 50%;
+        transform: scale(1) rotateX(0deg);
+    }
+    25% {
+        background-position: 50% 25%;
+        transform: scale(1.02) rotateX(2deg);
+    }
+    50% {
+        background-position: 100% 50%;
+        transform: scale(1.05) rotateX(0deg);
+    }
+    75% {
+        background-position: 50% 75%;
+        transform: scale(1.02) rotateX(-2deg);
+    }
+    100% {
+        background-position: 0% 50%;
+        transform: scale(1) rotateX(0deg);
+    }
+}
+/*------------------------------------------*/
+
+.text2 {
+    font-family: rj;
+    font-size: 4vmin;
+    color: white;
+    text-shadow: 0 0 10px rgb(189, 187, 187);
+    margin-top: 9vmin;
+    margin-left: 102vmin;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.text2::after {
+    content: '';
+    display: inline-block;
+    width: 2px;
+    height: 1.2em;
+    background-color: white;
+    animation: blink 1s infinite;
+    margin-left: 2px;
+    vertical-align: text-bottom;
+}
+
+@keyframes blink {
+    0%, 50% {
+        opacity: 1;
+    }
+    51%, 100% {
+        opacity: 0;
+    }
+}
+/*------------------------------------------*/
+
+.text3{
+    font-family: rj;
+    font-size: 4vmin;
+    color: white;
+    margin-top: 12vmin;
+    margin-left: 88vmin;
+    position: absolute;
+}
+
+.buttons-uber {
+    position: absolute;
+    margin-left: 3vmin;
+}
+
+.discord-btn-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.8vmin;
+    padding: 2vmin 2.8vmin;
+    border-radius: 1vmin;
+    background: rgba(255,255,255,0.03);
+    backdrop-filter: blur(8px);
+    transition: all 0.3s ease;
+    top: 15vmin;
+    left: 15vmin;
+    position: absolute;
+}
+
+.discord-icon {
+    width: 2vmin;
+    height: 2vmin;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.discord-btn-link:hover {
+    background: rgba(255,255,255,0.08);
+    transform: translateY(-2px);
+    box-shadow: 
+        0 0 15px rgba(114, 137, 218, 0.2),
+        0 0 30px rgba(114, 137, 218, 0.08);
+}
+
+.discord-btn-link:hover .discord-icon {
+    transform: scale(1.1) rotate(-5deg);
+    filter: drop-shadow(0 0 6px rgba(114, 137, 218, 0.6));
+}
+
+.check-products-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.8vmin;
+    padding: 2vmin 2.8vmin;
+    border-radius: 1vmin;
+    background: rgba(255,255,255,0.03);
+    backdrop-filter: blur(8px);
+    top: 15vmin;
+    left: 30vmin;
+    position: absolute;
+    transition: all 0.3s ease;
+}
+
+.cart-icon {
+    width: 2vmin;
+    height: 2vmin;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.check-products-btn:hover {
+    background: rgba(255,255,255,0.08);
+    transform: translateY(-2px);
+    box-shadow: 
+        0 0 15px rgba(165, 160, 160, 0.2),
+        0 0 30px rgba(165, 160, 160, 0.08);
+}
+
+.check-products-btn:hover .cart-icon {
+    transform: scale(1.1) rotate(-5deg);
+    filter: drop-shadow(0 0 6px rgba(165, 160, 160, 0.6));
+}
+
+.star-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.8vmin;
+    padding: 2vmin 2.8vmin;
+    border-radius: 1vmin;
+    background: rgba(255,255,255,0.03);
+    backdrop-filter: blur(8px);
+    transition: all 0.3s ease;
+    top: 15vmin;
+    left: 46vmin;
+    position: absolute;
+}
+
+.star-icon {
+    width: 2vmin;
+    height: 2vmin;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.star-btn:hover {
+    background: rgba(255,255,255,0.08);
+    transform: translateY(-2px);
+    box-shadow: 
+        0 0 15px rgba(223, 213, 124, 0.15),
+        0 0 30px rgba(184, 175, 58, 0.05);
+}
+
+.star-btn:hover .star-icon {
+    transform: scale(1.15) rotate(8deg);
+    filter: drop-shadow(0 0 6px rgba(230, 226, 9, 0.6));
+}
